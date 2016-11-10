@@ -109,7 +109,7 @@ class JarCache {
         }
 
         public boolean isValid() {
-            return new File(jar.getName()).lastModified() <= snapshotCalculated;
+            return true; // new File(jar.getName()).lastModified() <= snapshotCalculated;
         }
 
         private static String canonicalJarPath(String path) {
